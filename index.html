@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="청라 김우석영어학원 - 원장직강 개인별 맞춤지도. 우리 아이가 다닐 마지막 영어학원. 초등·중등·고등 영어 전문.">
+  <meta name="keywords" content="청라영어학원, 김우석영어, 영어학원, 청라, 인천영어학원, 원장직강">
+  <title>김우석영어학원 | 청라 원장직강 영어 전문</title>
+
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <!-- Playfair Display for accent headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVIGATION                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="images/logo.webp" alt="김우석영어" class="nav__logo-img">
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">원장소개</a></li>
+        <li><a href="#features">교육특징</a></li>
+        <li><a href="#programs">프로그램</a></li>
+        <li><a href="#results">성적</a></li>
+        <li><a href="#testimonials">후기</a></li>
+        <li><a href="#gallery">갤러리</a></li>
+        <li><a href="#location">오시는 길</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO SECTION                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-bg-kws.webp" alt="김우석영어학원" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge anim-fade" data-delay="0">
+        <span class="hero__badge-line"></span>
+        청라 김우석영어
+        <span class="hero__badge-line"></span>
+      </div>
+      <h1 class="hero__title anim-fade" data-delay="1">
+        우리 아이가 다닐<br>
+        <em>마지막</em> 영어학원
+      </h1>
+      <p class="hero__sub anim-fade" data-delay="2">
+        원장직강 개인별 맞춤지도 · 김우석영어학원
+      </p>
+      <a href="#programs" class="hero__cta anim-fade" data-delay="3">
+        수업 알아보기
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero__scroll-hint anim-fade" data-delay="4">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ABOUT / DIRECTOR SECTION                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">01</span>
+        <span class="section-label__text">원장 소개</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image-col anim-slide-up">
+          <div class="about__image-frame">
+            <img src="images/director-portrait.webp" alt="김우석 원장" class="about__image">
+          </div>
+          <div class="about__name-card">
+            <span class="about__name-title">원장</span>
+            <span class="about__name">김우석</span>
+            <span class="about__name-aka">우석선생님</span>
+          </div>
+        </div>
+
+        <div class="about__text-col">
+          <blockquote class="about__quote anim-slide-up">
+            <svg class="about__quote-mark" width="48" height="36" viewBox="0 0 48 36">
+              <path d="M0 36V20.4C0 8.4 7.2 1.2 21.6 0l1.2 4.8C14.4 6 10.8 10.8 10.8 18H21.6V36H0ZM26.4 36V20.4C26.4 8.4 33.6 1.2 48 0l1.2 4.8C40.8 6 37.2 10.8 37.2 18H48V36H26.4Z" fill="currentColor"/>
+            </svg>
+            <p>대한민국 영어강사 그 누구와 비교해도<br><strong>수업의 질에서 압도</strong></p>
+          </blockquote>
+
+          <div class="about__credentials anim-slide-up">
+            <ul class="about__credentials-list">
+              <li>건국대학교 영어영문학과 졸업</li>
+              <li>올바른 선생님연합 2기 (2015)</li>
+              <li>서울 여의도 자물쇠학원 영어대표강사</li>
+              <li>서울 강서 정진학원 고등부 영어대표강사</li>
+              <li>평촌 한국학원 고등부 영어대표강사</li>
+              <li>청라 라이튼 국제고·미추홀외고반 대표강사</li>
+              <li>청라 아슬란영어학원 영어대표강사</li>
+              <li>청라 어바웃영어학원 부원장</li>
+              <li><strong>現 김우석영어학원 대표원장</strong></li>
+            </ul>
+          </div>
+
+          <div class="about__story anim-slide-up">
+            <p>2022년 7월, 단 <strong>9명</strong>의 학생과 함께 시작한 김우석영어학원. 오직 <strong>진정성, 열정, 전문성</strong> 이 3가지를 핵심가치로 삼고, 입소문만으로 빠르게 성장했습니다.</p>
+            <p>매달 받고 있는 학부모님들의 수업료 — 절대 적은 금액이라 생각하지 않습니다. 수업료의 가치를 최대한으로 실현할 수 있도록 <strong>최고의 수업</strong>을 제공하겠습니다.</p>
+            <p>현재 <strong>130명 이상</strong>의 학생들과 함께하며, 제2지점 개원(1관·2관 운영) 및 중·고등 수학 과정까지 확장하였습니다.</p>
+          </div>
+
+          <div class="about__counters anim-slide-up">
+            <div class="about__counter">
+              <span class="about__counter-number" data-target="130" data-suffix="+">0</span>
+              <span class="about__counter-label">재원생</span>
+            </div>
+            <div class="about__counter-divider"></div>
+            <div class="about__counter">
+              <span class="about__counter-number" data-target="100" data-suffix="%">0</span>
+              <span class="about__counter-label">추천율</span>
+            </div>
+            <div class="about__counter-divider"></div>
+            <div class="about__counter">
+              <span class="about__counter-number" data-target="5" data-suffix=".0">0</span>
+              <span class="about__counter-label">평점</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FEATURES / WHY US                           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">02</span>
+        <span class="section-label__text">교육 특징</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="features__heading anim-slide-up">
+        왜 <em>김우석영어</em>인가요?
+      </h2>
+
+      <div class="features__grid">
+        <!-- Card 1 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">원장직강</h3>
+            <p class="feature-card__desc">모든 수업을 원장이 직접 진행합니다. 아이들의 수업 전반과 개개인의 태도까지 원장이 직접 두 눈으로 확인하고 관리합니다.</p>
+          </div>
+          <span class="feature-card__number">01</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <path d="M20 8v6M23 11h-6"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">무료 주말 1:1 클리닉</h3>
+            <p class="feature-card__desc">토요일 9시~19시, 일요일 9시~17시 개인과외식 클리닉을 무료로 진행합니다. 추가비용 없이 1:1 맞춤 지도를 받을 수 있습니다.</p>
+          </div>
+          <span class="feature-card__number">02</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">빔프로젝터 & 전자칠판</h3>
+            <p class="feature-card__desc">대형 학원·EBS 교육방송급 빔프로젝터와 전자칠판으로 생동감 넘치는 수업. 아이컨택과 교감을 통해 적극적 수업 참여를 이끕니다.</p>
+          </div>
+          <span class="feature-card__number">03</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">수행평가 직접 관리</h3>
+            <p class="feature-card__desc">필기시험뿐 아니라 영어 성적과 직결되는 수행평가도 원장이 직접 꼼꼼히 첨삭하고 세심하게 지도합니다.</p>
+          </div>
+          <span class="feature-card__number">04</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">24시간 학부모 소통</h3>
+            <p class="feature-card__desc">카카오톡, 문자, 전화를 통해 수시로 소통합니다. 학부모님 한 분 한 분의 의견과 건의사항을 적극 반영하여 맞춤형 수업을 실현합니다.</p>
+          </div>
+          <span class="feature-card__number">05</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="feature-card anim-slide-up">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">추가비용 없음</h3>
+            <p class="feature-card__desc">정규수업료 외 특강비·보강비·무리한 교재비가 없습니다. 학원 자체 제작 교재 무료 제공, 주말 클리닉도 추가비용 없이 운영합니다.</p>
+          </div>
+          <span class="feature-card__number">06</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PROGRAMS                                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">03</span>
+        <span class="section-label__text">수업 프로그램</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="programs__heading anim-slide-up">
+        영어 고득점을 위한<br><em>마지막 학원</em>
+      </h2>
+
+      <div class="programs__grid">
+        <!-- Elementary -->
+        <div class="program-card anim-slide-up">
+          <div class="program-card__level">초등부</div>
+          <div class="program-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+            </svg>
+          </div>
+          <h3 class="program-card__title">Elementary</h3>
+          <p class="program-card__desc">기초 문법과 어휘력을 탄탄하게 다지며, 영어에 대한 자신감과 흥미를 키워줍니다. 읽기·쓰기·말하기·듣기 4대 영역의 균형 발달과 함께, 중등 과정을 위한 탄탄한 기반을 만들어갑니다.</p>
+          <ul class="program-card__features">
+            <li>기초 문법 · 어휘 체계적 학습</li>
+            <li>4대 영역 균형 발달</li>
+            <li>주간 테스트로 학습 점검</li>
+          </ul>
+          <div class="program-card__tag">초등</div>
+        </div>
+
+        <!-- Middle School -->
+        <div class="program-card anim-slide-up">
+          <div class="program-card__level">중등부</div>
+          <div class="program-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="program-card__title">Middle School</h3>
+          <p class="program-card__desc">내신 완벽 대비와 수능 영어의 기초를 다집니다. 개념과 원리에 대한 완전한 이해를 통해 문법 개념을 하나하나 정복하며, 수행평가까지 원장이 직접 관리합니다.</p>
+          <ul class="program-card__features">
+            <li>수준별 A·B·C 반 편성</li>
+            <li>문법 · 구조독해 · 수행평가 관리</li>
+            <li>주간 테스트 · 주말 1:1 클리닉</li>
+          </ul>
+          <div class="program-card__tag">중등 A · B · C</div>
+        </div>
+
+        <!-- High School -->
+        <div class="program-card anim-slide-up">
+          <div class="program-card__level">고등부</div>
+          <div class="program-card__icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/>
+            </svg>
+          </div>
+          <h3 class="program-card__title">High School</h3>
+          <p class="program-card__desc">내신·모의고사·수능 전 영역을 아우르는 고등 전문 과정입니다. 수준별 반 편성으로 목표 등급 달성을 위한 전략적 학습과 함께, 수시·정시 영어 성적을 책임집니다.</p>
+          <ul class="program-card__features">
+            <li>수준별 A·B·C 반 편성</li>
+            <li>내신 · 모의고사 · 수능 완벽 대비</li>
+            <li>수행평가 첨삭 · 주말 1:1 클리닉</li>
+          </ul>
+          <div class="program-card__tag">고등 A · B · C</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SUCCESS STORIES                              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">04</span>
+        <span class="section-label__text">명예의 전당</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="results__heading anim-slide-up">
+        입증된 <em>성적 향상</em>
+      </h2>
+
+      <div class="results__grid">
+        <!-- Story 1 -->
+        <div class="result-card anim-slide-up">
+          <div class="result-card__score">
+            <span class="result-card__score-num">100</span>
+            <span class="result-card__score-label">내신 만점</span>
+          </div>
+          <div class="result-card__body">
+            <h3 class="result-card__name">안상우</h3>
+            <p class="result-card__school">수의대 합격</p>
+            <p class="result-card__detail">중2부터 고3까지 김우석영어학원에서 수학. <strong>모든 내신 100점, 모의고사·수능 1등급</strong>을 유지하며 수의대에 합격했습니다.</p>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="result-card anim-slide-up" data-delay="1">
+          <div class="result-card__score">
+            <span class="result-card__score-num">96</span>
+            <span class="result-card__score-label">첫 시험 성적</span>
+          </div>
+          <div class="result-card__body">
+            <h3 class="result-card__name">유주형</h3>
+            <p class="result-card__school">청람중학교 2학년</p>
+            <p class="result-card__detail">문법적 기초가 부족했던 상태에서 시작. 문법책·독해책을 하나하나 완성하며 <strong>영어시험이 가장 어렵다는 청람중에서 첫 시험 96점</strong>을 기록했습니다.</p>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="result-card anim-slide-up" data-delay="2">
+          <div class="result-card__score">
+            <span class="result-card__score-num">+20</span>
+            <span class="result-card__score-label">2개월 만에</span>
+          </div>
+          <div class="result-card__body">
+            <h3 class="result-card__name">기모</h3>
+            <p class="result-card__school">경연중학교</p>
+            <p class="result-card__detail">영어에 어려움을 겪던 학생이 개념과 원리에 대한 완전한 이해를 통해 <strong>2개월 만에 20점 향상, 92점 달성.</strong> 비가 오나 눈이 오나 한 번도 지각하지 않은 성실함의 결과입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth Timeline -->
+      <div class="results__timeline anim-slide-up">
+        <h3 class="results__timeline-title">성장 스토리</h3>
+        <div class="results__timeline-track">
+          <div class="results__timeline-item">
+            <span class="results__timeline-date">2022.07</span>
+            <span class="results__timeline-event">9명으로 개원</span>
+          </div>
+          <div class="results__timeline-item">
+            <span class="results__timeline-date">2023.01</span>
+            <span class="results__timeline-event">65명 성장</span>
+          </div>
+          <div class="results__timeline-item">
+            <span class="results__timeline-date">2023.07</span>
+            <span class="results__timeline-event">2관 개원 · 수학반 개설</span>
+          </div>
+          <div class="results__timeline-item">
+            <span class="results__timeline-date">2023.09</span>
+            <span class="results__timeline-event">100명 돌파 · 유튜브 소개</span>
+          </div>
+          <div class="results__timeline-item results__timeline-item--current">
+            <span class="results__timeline-date">현재</span>
+            <span class="results__timeline-event">130명+ 재원</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- TESTIMONIALS                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">05</span>
+        <span class="section-label__text">수강생 후기</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="testimonials__heading anim-slide-up">
+        실제 수강생의 <em>생생한 후기</em>
+      </h2>
+
+      <!-- Rating Badge -->
+      <div class="testimonials__rating anim-slide-up">
+        <div class="testimonials__score">
+          <span class="testimonials__score-num">5.0</span>
+          <div class="testimonials__stars">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--crimson)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--crimson)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--crimson)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--crimson)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--crimson)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="testimonials__source">네이버플레이스 실제 후기 · 100% 추천율 · 24건 리뷰</span>
+        </div>
+      </div>
+
+      <!-- Review Keywords -->
+      <div class="testimonials__keywords anim-slide-up">
+        <div class="keyword-bar">
+          <span class="keyword-bar__label">선생님이 열정적이에요</span>
+          <div class="keyword-bar__track">
+            <div class="keyword-bar__fill" data-width="88"></div>
+          </div>
+          <span class="keyword-bar__count">21명</span>
+        </div>
+        <div class="keyword-bar">
+          <span class="keyword-bar__label">선생님 실력이 좋아요</span>
+          <div class="keyword-bar__track">
+            <div class="keyword-bar__fill" data-width="88"></div>
+          </div>
+          <span class="keyword-bar__count">21명</span>
+        </div>
+        <div class="keyword-bar">
+          <span class="keyword-bar__label">학생과 소통을 잘해요</span>
+          <div class="keyword-bar__track">
+            <div class="keyword-bar__fill" data-width="75"></div>
+          </div>
+          <span class="keyword-bar__count">18명</span>
+        </div>
+        <div class="keyword-bar">
+          <span class="keyword-bar__label">맞춤 지도를 잘해줘요</span>
+          <div class="keyword-bar__track">
+            <div class="keyword-bar__fill" data-width="58"></div>
+          </div>
+          <span class="keyword-bar__count">14명</span>
+        </div>
+        <div class="keyword-bar">
+          <span class="keyword-bar__label">수업이 체계적이에요</span>
+          <div class="keyword-bar__track">
+            <div class="keyword-bar__fill" data-width="54"></div>
+          </div>
+          <span class="keyword-bar__count">13명</span>
+        </div>
+      </div>
+
+      <!-- Review Cards -->
+      <div class="testimonials__carousel">
+        <div class="testimonials__track" id="reviewTrack">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">안</div>
+              <div>
+                <div class="review-card__name">안상우</div>
+                <div class="review-card__tag">수의대 입학</div>
+              </div>
+            </div>
+            <p class="review-card__text">"중2부터 고3까지 배움. 모든 내신 100점, 모의고사/수능 1등급 유지. <strong>변치 않는 텐션과 목소리로 몇번이고 친절히 설명해주신 덕분</strong>"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">B</div>
+              <div>
+                <div class="review-card__name">BNNR</div>
+                <div class="review-card__tag">고등학생 제자</div>
+              </div>
+            </div>
+            <p class="review-card__text">"맞춤형으로 세심하게 지도... <strong>내신, 모의고사, 수능까지 전체적으로 정말 큰 도움.</strong> 재밌는 수업은 물론 동기부여까지 진심으로 대해주셔서 감사"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">비</div>
+              <div>
+                <div class="review-card__name">비비안나87</div>
+                <div class="review-card__tag">초창기 멤버</div>
+              </div>
+            </div>
+            <p class="review-card__text">"원장님 너무 좋으신분... <strong>센스있고 실력있고 능력있고 멋진분.</strong> 아이도 엄마도 믿고 보내는 신뢰있는 학원"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">H</div>
+              <div>
+                <div class="review-card__name">Heylee70</div>
+                <div class="review-card__tag">2년 재학</div>
+              </div>
+            </div>
+            <p class="review-card__text">"열정적이시고 친근하게 가르쳐주셔서 너무 좋았어요. <strong>카리스마 있게 가르쳐주셔서 완급조절 레전드</strong>"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">뚜</div>
+              <div>
+                <div class="review-card__name">뚜비3221</div>
+                <div class="review-card__tag">학부모</div>
+              </div>
+            </div>
+            <p class="review-card__text">"<strong>아이가 영어에 재미를 붙여 성적도 오르고</strong> 학원가는 시간이 기다려진다고"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">J</div>
+              <div>
+                <div class="review-card__name">Joytt</div>
+                <div class="review-card__tag">학부모</div>
+              </div>
+            </div>
+            <p class="review-card__text">"<strong>청라 최고의 영어학원.</strong> 학생 관리가 철저해요"</p>
+            <div class="review-card__stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--crimson)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="testimonials__controls">
+          <button class="testimonials__btn testimonials__btn--prev" id="prevBtn" aria-label="이전 리뷰">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="testimonials__dots" id="carouselDots"></div>
+          <button class="testimonials__btn testimonials__btn--next" id="nextBtn" aria-label="다음 리뷰">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Naver Place Link -->
+      <div style="text-align: center; margin-top: 2.5rem;" class="anim-slide-up">
+        <a href="https://m.place.naver.com/place/1284498821/review/visitor" target="_blank" rel="noopener noreferrer" class="testimonials__naver-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          실제 후기 보러가기
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- GALLERY                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">06</span>
+        <span class="section-label__text">학원 갤러리</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="gallery__heading anim-slide-up">
+        김우석영어의 <em>일상</em>
+      </h2>
+      <p class="gallery__intro anim-slide-up">수업과 일상 속 김우석영어학원의 모습을 소개합니다.</p>
+
+      <div class="gallery__grid">
+        <!-- Large: 원장님과 학생들 (가로) — spans 2 rows left -->
+        <div class="gallery__item gallery__item--hero anim-slide-up">
+          <img src="images/academy-1.webp" alt="김우석 원장과 학생들" class="gallery__img" loading="lazy">
+          <div class="gallery__item-overlay">
+            <span class="gallery__item-caption">우석선생님과 제자들</span>
+          </div>
+        </div>
+        <!-- 원장님과 남학생들 (세로) -->
+        <div class="gallery__item anim-slide-up" data-delay="1">
+          <img src="images/academy-2.webp" alt="김우석영어학원 수업 후" class="gallery__img" loading="lazy">
+          <div class="gallery__item-overlay">
+            <span class="gallery__item-caption">수업 후 한 컷</span>
+          </div>
+        </div>
+        <!-- 원장님과 학생 (세로) -->
+        <div class="gallery__item anim-slide-up" data-delay="2">
+          <img src="images/academy-3.webp" alt="김우석영어학원 제자와 함께" class="gallery__img" loading="lazy">
+          <div class="gallery__item-overlay">
+            <span class="gallery__item-caption">함께 성장하는 제자들</span>
+          </div>
+        </div>
+        <!-- 학원 입구 (가로) — spans 2 cols bottom -->
+        <div class="gallery__item gallery__item--wide anim-slide-up" data-delay="3">
+          <img src="images/academy-interior.webp" alt="김우석영어학원 학원 앞" class="gallery__img" loading="lazy">
+          <div class="gallery__item-overlay">
+            <span class="gallery__item-caption">김우석영어학원 전경</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lightboxClose" aria-label="닫기">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <img class="lightbox__img" id="lightboxImg" alt="갤러리 이미지">
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LOCATION                                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-label anim-slide-up">
+        <span class="section-label__num">07</span>
+        <span class="section-label__text">오시는 길</span>
+        <span class="section-label__line"></span>
+      </div>
+
+      <h2 class="location__heading anim-slide-up">
+        <em>김우석영어학원</em> 오시는 길
+      </h2>
+
+      <div class="location__grid">
+        <div class="location__map anim-slide-up">
+          <div id="daumRoughmapContainer1771906096652" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        </div>
+
+        <div class="location__info anim-slide-up">
+          <div class="location__info-card">
+            <div class="location__info-item">
+              <div class="location__info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>주소</strong>
+                <p>인천 서구 크리스탈로74번길 31<br>월드프라자 4층 (1관) · 6층 (2관)</p>
+              </div>
+            </div>
+
+            <div class="location__info-item">
+              <div class="location__info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <strong>찾아오시는 방법</strong>
+                <p>더샵 아파트 / 스퀘어 세븐 맞은편</p>
+              </div>
+            </div>
+
+            <div class="location__info-item">
+              <div class="location__info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>전화번호</strong>
+                <p><a href="tel:0507-1351-3217">0507-1351-3217</a></p>
+              </div>
+            </div>
+
+            <div class="location__info-item">
+              <div class="location__info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>운영시간</strong>
+                <p>평일 14:00 ~<br>토 9:00~19:00 · 일 9:00~17:00 (클리닉)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__links">
+            <a href="https://blog.naver.com/wooseokenglish" target="_blank" rel="noopener noreferrer" class="location__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              네이버 블로그
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER                                      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__cta-area">
+          <p class="footer__slogan">우리 아이가 다닐 <em>마지막</em> 영어학원</p>
+          <a href="tel:0507-1351-3217" class="footer__cta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            상담 전화하기
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="images/C-Photo-View.png" alt="김우석영어" class="footer__logo-img">
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">학원 정보</h4>
+            <p class="footer__col-text">인천 서구 크리스탈로74번길 31<br>월드프라자 4층(1관) · 6층(2관)</p>
+            <p class="footer__col-text">더샵 아파트 / 스퀘어 세븐 맞은편</p>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">연락처</h4>
+            <p class="footer__col-text"><a href="tel:0507-1351-3217" class="footer__phone">0507-1351-3217</a></p>
+            <p class="footer__col-text">평일 14:00 ~ · 토·일 클리닉 운영</p>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">링크</h4>
+            <div class="footer__links">
+              <a href="https://blog.naver.com/wooseokenglish" target="_blank" rel="noopener noreferrer" class="footer__ext-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                네이버 블로그
+              </a>
+              <a href="https://m.place.naver.com/place/1284498821" target="_blank" rel="noopener noreferrer" class="footer__ext-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                네이버플레이스
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">&copy; 2022-2026 김우석영어학원. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Kakao Map -->
+  <script charset="UTF-8" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp" : "1771906096652",
+      "key" : "hwe9juto4y3",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
+    }).render();
+  </script>
+</body>
+</html>
