@@ -58,6 +58,18 @@ ul { list-style: none; }
   padding: 0 clamp(1.25rem, 4vw, 2.5rem);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ─── SECTION LABEL ─── */
 .section-label {
   display: flex;
@@ -731,6 +743,173 @@ ul { list-style: none; }
   font-size: 0.75rem;
   font-weight: 600;
   background: var(--cream-dark);
+  color: var(--charcoal);
+  letter-spacing: 0.02em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TUITION FEES
+   ═══════════════════════════════════════════════════════════ */
+.tuition {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: var(--white);
+}
+.tuition__heading {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--charcoal);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.tuition__heading em {
+  font-style: normal;
+  color: var(--crimson);
+  font-family: var(--font-display);
+}
+.tuition__intro {
+  font-size: 1rem;
+  color: var(--warm-600);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* Price Table */
+.tuition__table-wrap {
+  border: 1px solid var(--warm-200);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--cream);
+  box-shadow: 0 16px 48px rgba(28, 25, 23, 0.06);
+}
+.tuition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.tuition-table thead th {
+  background: var(--charcoal);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 1.15rem 1.75rem;
+}
+.tuition-table thead th.tuition-table__price-col {
+  text-align: right;
+}
+.tuition-table tbody tr {
+  transition: background 0.3s ease;
+}
+.tuition-table tbody tr:hover {
+  background: var(--crimson-pale);
+}
+.tuition-table th,
+.tuition-table td {
+  padding: 1.15rem 1.75rem;
+  border-top: 1px solid var(--warm-200);
+  vertical-align: middle;
+}
+.tuition-table tbody tr:first-child th,
+.tuition-table tbody tr:first-child td {
+  border-top: none;
+}
+/* Course group (과정) cell — spans tiers */
+.tuition-table__group {
+  width: 1%;
+  white-space: nowrap;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--crimson);
+  background: rgba(204, 44, 38, 0.035);
+  border-right: 1px solid var(--warm-200);
+}
+.tuition-table tbody tr:hover .tuition-table__group {
+  background: rgba(204, 44, 38, 0.06);
+}
+.tuition-table td:first-of-type {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+.tuition-table__price {
+  text-align: right;
+  white-space: nowrap;
+}
+.tuition-table__amount {
+  font-family: var(--font-accent);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--crimson);
+  letter-spacing: 0.01em;
+}
+.tuition-table__won {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--charcoal-soft);
+  margin-left: 0.15rem;
+}
+
+/* Notes + registration license */
+.tuition__footnote {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.tuition__notes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 640px;
+}
+.tuition__notes li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  color: var(--warm-600);
+  line-height: 1.6;
+}
+.tuition__notes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  background: var(--crimson);
+  border-radius: 50%;
+}
+.tuition__license {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--warm-200);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.tuition__license-icon {
+  color: var(--crimson);
+  flex-shrink: 0;
+}
+.tuition__license-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--warm-600);
+  text-transform: uppercase;
+}
+.tuition__license-value {
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--charcoal);
   letter-spacing: 0.02em;
 }
@@ -1443,6 +1622,12 @@ ul { list-style: none; }
   color: var(--warm-600);
   margin-bottom: 0.5rem;
 }
+.footer__reg {
+  margin-top: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--warm-400);
+  letter-spacing: 0.01em;
+}
 .footer__phone {
   color: var(--charcoal);
   font-weight: 700;
@@ -1593,6 +1778,26 @@ ul { list-style: none; }
     font-size: 0.78rem;
   }
 
+  .tuition-table th,
+  .tuition-table td {
+    padding: 0.95rem 1rem;
+  }
+  .tuition-table thead th {
+    padding: 0.95rem 1rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+  .tuition-table__amount {
+    font-size: 1.2rem;
+  }
+  .tuition__footnote {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tuition__license {
+    justify-content: center;
+  }
+
   .hero__content {
     margin-left: 0;
   }
@@ -1650,6 +1855,27 @@ ul { list-style: none; }
   }
   .keyword-bar__track {
     display: none;
+  }
+  .tuition-table {
+    font-size: 0.85rem;
+  }
+  .tuition-table th,
+  .tuition-table td {
+    padding: 0.8rem 0.6rem;
+  }
+  .tuition-table thead th {
+    padding: 0.8rem 0.6rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.02em;
+  }
+  .tuition-table__group {
+    font-size: 0.9rem;
+  }
+  .tuition-table__amount {
+    font-size: 1rem;
+  }
+  .tuition-table__won {
+    font-size: 0.72rem;
   }
   .footer__cta-area {
     flex-direction: column;
