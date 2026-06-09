@@ -39,17 +39,44 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ─── Hamburger toggle ─── */
+  /* ─── Hamburger toggle (with backdrop + scroll lock) ─── */
+  var navBackdrop = document.createElement('div');
+  navBackdrop.className = 'nav__backdrop';
+  document.body.appendChild(navBackdrop);
+
+  function openMenu() {
+    hamburger.classList.add('is-open');
+    navLinks.classList.add('is-open');
+    navBackdrop.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    hamburger.classList.remove('is-open');
+    navLinks.classList.remove('is-open');
+    navBackdrop.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
   hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('is-open');
-    navLinks.classList.toggle('is-open');
+    if (navLinks.classList.contains('is-open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
+  navBackdrop.addEventListener('click', closeMenu);
+
   navAnchors.forEach(function (a) {
-    a.addEventListener('click', function () {
-      hamburger.classList.remove('is-open');
-      navLinks.classList.remove('is-open');
-    });
+    a.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape, and if the viewport grows back to desktop
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) closeMenu();
   });
 
   /* ═══════════════════════════════════════════════════════════

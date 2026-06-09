@@ -222,6 +222,28 @@ ul { list-style: none; }
 .nav__hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav__hamburger.is-open span:nth-child(2) { opacity: 0; }
 .nav__hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+/* Open over the white drawer — keep the X dark so it stays visible */
+.nav__hamburger.is-open span { background: var(--charcoal); }
+
+/* ─── Mobile menu backdrop ─── */
+.nav__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(28, 25, 23, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.nav__backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 769px) {
+  .nav__backdrop { display: none; }
+}
 
 /* ═══════════════════════════════════════════════════════════
    HERO
@@ -1711,27 +1733,56 @@ ul { list-style: none; }
     position: fixed;
     top: 0;
     right: 0;
-    width: 280px;
+    width: 288px;
     height: 100vh;
     background: var(--white);
     flex-direction: column;
-    padding: calc(var(--nav-height) + 2rem) 2rem 2rem;
-    gap: 0;
+    justify-content: center;
+    align-items: stretch;
+    padding: var(--nav-height) 2.5rem 2rem;
+    gap: 0.1rem;
     transform: translateX(100%);
-    transition: transform 0.4s var(--ease-out);
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.45s var(--ease-out);
+    box-shadow: -16px 0 48px rgba(28, 25, 23, 0.12);
+    counter-reset: navitem;
   }
   .nav__links.is-open {
     transform: translateX(0);
   }
-  .nav__links a {
-    padding: 1rem 0;
-    font-size: 1rem;
-    color: var(--charcoal) !important;
-    border-bottom: 1px solid var(--warm-200);
+  .nav__links li {
+    counter-increment: navitem;
   }
-  .nav__links a:hover {
+  .nav__links a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--charcoal) !important;
+    border-bottom: none;
+  }
+  /* Editorial index number — mirrors the section labels (01–08) */
+  .nav__links a::before {
+    content: counter(navitem, decimal-leading-zero);
+    font-family: var(--font-accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--warm-400);
+    transition: color 0.3s ease;
+  }
+  /* Drop the desktop underline-reveal on mobile (read as a strikethrough) */
+  .nav__links a::after {
+    display: none;
+  }
+  .nav__links a:hover,
+  .nav__links a.is-active {
     color: var(--crimson) !important;
+  }
+  .nav__links a:hover::before,
+  .nav__links a.is-active::before {
+    color: var(--crimson);
   }
 
   .about__grid {
